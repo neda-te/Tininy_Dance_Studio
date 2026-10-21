@@ -27,3 +27,21 @@ thead{background:#efeaf1}tbody th{font-weight:400}tbody td{color:var(--muted)}
 @media(max-width:720px){.teacher-section{grid-template-columns:1fr}.portrait-placeholder{min-height:280px}.page-intro{padding-bottom:35px}.schedule-help{display:block}.schedule-notice{padding-left:16px}th,td{padding:16px 12px}}
 
 .portrait-placeholder span{font-size:90px}.schedule-note{color:var(--muted);font-size:14px;margin-top:25px}table{min-width:480px}.teacher-section+.teacher-section{border-top:1px solid var(--line)}
+
+/* Седмичен календар: редове през 30 минути, занятията заемат реалната си продължителност. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.weekly-schedule{min-width:1040px;table-layout:fixed;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.weekly-schedule caption{padding-bottom:18px}
+.weekly-schedule th,.weekly-schedule td{padding:12px 8px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;font-size:12px}
+.weekly-schedule th:last-child,.weekly-schedule td:last-child{border-right:0}
+.weekly-schedule tbody tr:last-child>*{border-bottom:0}
+.weekly-schedule thead th{height:60px;background:#efeaf1;color:var(--ink);font-weight:600}
+.weekly-schedule thead th:first-child{width:76px;position:sticky;left:0;z-index:3}
+.weekly-schedule .time-label{position:sticky;left:0;z-index:2;background:var(--paper);font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted);vertical-align:top}
+.weekly-schedule tbody tr{height:54px}
+.weekly-schedule .free{background:#fff8}
+.weekly-schedule .lesson{vertical-align:middle;border:3px solid var(--paper);border-radius:10px;color:#392544;line-height:1.4}
+.lesson strong,.lesson-time,.lesson-note{display:block}.lesson strong{font-size:13px}.lesson-time{font-size:11px;margin-top:8px;font-variant-numeric:tabular-nums;white-space:nowrap}.lesson-note{font-size:10px;margin-top:7px}
+.weekly-schedule .young{background:#ece0f4}.weekly-schedule .middle{background:#e1d3ec}.weekly-schedule .senior{background:#705087;color:white}
+.table-scroll:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
+@media(max-width:1200px){.schedule-help{display:block}}
