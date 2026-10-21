@@ -45,3 +45,8 @@ thead{background:#efeaf1}tbody th{font-weight:400}tbody td{color:var(--muted)}
 .weekly-schedule .young{background:#f0e3fa;color:#392544}.weekly-schedule .middle{background:#70458c;color:white}.weekly-schedule .senior{background:#302238;color:white}
 .table-scroll:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
 @media(max-width:1200px){.schedule-help{display:block}}
+
+/* Навигацията остава видима при скролване на всяка страница. */
+header{position:sticky;top:0;z-index:100;background:var(--paper);box-shadow:0 1px 0 var(--line)}
+html{scroll-padding-top:130px}
+@media(max-width:720px){header{position:sticky}html{scroll-padding-top:105px}nav{max-height:calc(100dvh - 85px);overflow-y:auto}}
