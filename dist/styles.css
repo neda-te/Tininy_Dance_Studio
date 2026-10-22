@@ -42,7 +42,7 @@ thead{background:#efeaf1}tbody th{font-weight:400}tbody td{color:var(--muted)}
 .weekly-schedule .free{background:#fff8}
 .weekly-schedule .lesson{vertical-align:middle;border:3px solid var(--paper);border-radius:10px;color:#392544;line-height:1.4}
 .lesson strong,.lesson-time,.lesson-note{display:block}.lesson strong{font-size:13px}.lesson-time{font-size:11px;margin-top:8px;font-variant-numeric:tabular-nums;white-space:nowrap}.lesson-note{font-size:10px;margin-top:7px}
-.weekly-schedule .young{background:#f0e3fa;color:#392544}.weekly-schedule .middle{background:#70458c;color:white}.weekly-schedule .senior{background:#302238;color:white}
+.weekly-schedule .young{background:#f0e8f5;color:#392544}.weekly-schedule .middle{background:#d8c6e4;color:#392544}.weekly-schedule .senior{background:#bba1cd;color:#302238}
 .table-scroll:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
 @media(max-width:1200px){.schedule-help{display:block}}
 
